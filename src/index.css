@@ -1,0 +1,55 @@
+/* Remove these: */
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
+/* Add this: */
+@import "tailwindcss";
+@layer utilities {
+  @keyframes kenburnsIn {
+    0% { transform: scale(1.05); }
+    100% { transform: scale(1.15); }
+  }
+  @keyframes kenburnsOut {
+    0% { transform: scale(1.15); }
+    100% { transform: scale(1.05); }
+  }
+
+  .animate-kenburns-in {
+    animation: kenburnsIn 6s linear forwards;
+    transform-origin: center;
+  }
+  .animate-kenburns-out {
+    animation: kenburnsOut 6s linear forwards;
+    transform-origin: center;
+  }
+}.testimonials-swiper > .swiper-pagination {
+  bottom: -8px; /* move bullets slightly lower */
+}.testimonials-swiper > .swiper-pagination {
+  bottom: -12px; /* moved a bit further down */
+  z-index: 30;   /* ensure bullets are in front */
+}.testimonials-swiper {
+  overflow: visible !important;
+}
+
+.image-anime {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-anime::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+  background-color: hsla(0,0%,100%,.3);
+  z-index: 1;
+  transform: skewX(-25deg);
+  transition: all 0.7s ease-in-out;
+}
+
+.group:hover .image-anime::after {
+  left: 130%;
+}
