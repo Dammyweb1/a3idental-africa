@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
@@ -30,8 +31,8 @@ export default function HeroSlider() {
                   <h2 className="text-2xl sm:text-3xl font-extrabold">Your Smile, Our Priority</h2>
                   <p className="mt-2 max-w-xl opacity-95">Modern prosthetic and restorative dentistry tailored to you.</p>
                   <div className="mt-3 flex flex-wrap gap-2">
-                    <a href="/services" className="inline-flex items-center gap-2 rounded-md bg-blue-600 text-white px-4 py-2">Explore Services</a>
-                    <a href="/contact" className="inline-flex items-center gap-2 rounded-md border border-white/40 text-white px-4 py-2 hover:bg-white/10">Contact Us</a>
+                    <Link to="/services" className="inline-flex items-center gap-2 rounded-md bg-blue-600 text-white px-4 py-2">Explore Services</Link>
+                    <Link to="/contact" className="inline-flex items-center gap-2 rounded-md border border-white/40 text-white px-4 py-2 hover:bg-white/10">Contact Us</Link>
                   </div>
                 </div>
               </div>
@@ -48,8 +49,8 @@ export default function HeroSlider() {
                   <h2 className="text-2xl sm:text-3xl font-extrabold">Advanced Care, Gentle Touch</h2>
                   <p className="mt-2 max-w-xl opacity-95">State-of-the-art technology for precise, comfortable treatments.</p>
                   <div className="mt-3 flex flex-wrap gap-2">
-                    <a href="/services" className="inline-flex items-center gap-2 rounded-md bg-blue-600 text-white px-4 py-2">View Treatments</a>
-                    <a href="/contact" className="inline-flex items-center gap-2 rounded-md border border-white/40 text-white px-4 py-2 hover:bg-white/10">Get in Touch</a>
+                    <Link to="/services" className="inline-flex items-center gap-2 rounded-md bg-blue-600 text-white px-4 py-2">View Treatments</Link>
+                    <Link to="/contact" className="inline-flex items-center gap-2 rounded-md border border-white/40 text-white px-4 py-2 hover:bg-white/10">Get in Touch</Link>
                   </div>
                 </div>
               </div>
@@ -66,8 +67,8 @@ export default function HeroSlider() {
                   <h2 className="text-2xl sm:text-3xl font-extrabold">Book Today, Smile Tomorrow</h2>
                   <p className="mt-2 max-w-xl opacity-95">Flexible scheduling that fits your life and your smile goals.</p>
                   <div className="mt-3 flex flex-wrap gap-2">
-                    <a href="/contact" className="inline-flex items-center gap-2 rounded-md bg-blue-600 text-white px-4 py-2">Book Appointment</a>
-                    <a href="/services" className="inline-flex items-center gap-2 rounded-md border border-white/40 text-white px-4 py-2 hover:bg-white/10">All Services</a>
+                    <Link to="/contact" className="inline-flex items-center gap-2 rounded-md bg-blue-600 text-white px-4 py-2">Book Appointment</Link>
+                    <Link to="/services" className="inline-flex items-center gap-2 rounded-md border border-white/40 text-white px-4 py-2 hover:bg-white/10">All Services</Link>
                   </div>
                 </div>
               </div>

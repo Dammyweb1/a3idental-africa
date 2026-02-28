@@ -49,7 +49,7 @@ export default function Navbar() {
           <span role="img" aria-label="tooth">🦷</span>
           <span>A3idental</span>
         </Link>
-        <nav className="hidden sm:flex items-center gap-2">
+        <nav className="hidden sm:flex items-center gap-6">
           <NavLink to="/" end className={linkClass} style={{ color: 'inherit' }}>Home</NavLink>
           <NavLink to="/about" className={linkClass} style={{ color: 'inherit' }}>About Us</NavLink>
           <NavLink to="/services" className={linkClass} style={{ color: 'inherit' }}>Our Services</NavLink>
@@ -97,7 +97,7 @@ export default function Navbar() {
             <NavLink to="/services" className={({isActive}) => linkClass({isActive}) + ' text-slate-800 w-full block'} onClick={() => setMenuOpen(false)}>Our Services</NavLink>
             <NavLink to="/gallery" className={({isActive}) => linkClass({isActive}) + ' text-slate-800 w-full block'} onClick={() => setMenuOpen(false)}>Gallery</NavLink>
             <NavLink to="/blog" className={({isActive}) => linkClass({isActive}) + ' text-slate-800 w-full block'} onClick={() => setMenuOpen(false)}>Blog</NavLink>
-            <NavLink to="/contact" className={({isActive}) => linkClass({isActive}) + ' text-slate-800 w-full block'} onClick={() => setMenuOpen(false)}>Contact</NavLink>
+            <NavLink to="/contact" className={({isActive}) => linkClass({isActive}) + ' text-slate-800 w-full block'} onClick={() => setMenuOpen(false)}>Contact Us</NavLink>
           </nav>
         </aside>
       </div>
