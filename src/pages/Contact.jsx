@@ -14,11 +14,11 @@ export default function Contact() {
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData), // This matches the state you have in your screenshot
-        });
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
       const data = await response.json()
 

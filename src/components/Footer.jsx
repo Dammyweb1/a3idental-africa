@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 
@@ -18,7 +18,7 @@ export default function Footer() {
               safety, and long‑term oral health for all ages.
             </p>
             <div className="mt-5 flex items-center gap-3">
-              {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube].map((Icon, i) => (
+              {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map((Icon, i) => (
                 <a key={i} href="#" className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/30 text-white hover:bg-white/10" aria-label="social">
                   <Icon className="h-4 w-4" />
                 </a>
